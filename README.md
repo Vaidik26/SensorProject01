@@ -6,6 +6,14 @@ In electronics manufacturing, a wafer is a thin slice of semiconductor material,
 
 This project aims to predict the quality of semiconductor wafers, classifying them as either "Good" or "Bad" based on sensor readings captured during the wafer fabrication process. Early detection of defective wafers can improve manufacturing efficiency, enhance product quality, and reduce waste.
 
+
+![Screenshot 2024-11-06 200215](https://github.com/user-attachments/assets/0b706b28-ae8c-42cb-8937-0f23ac2c72ef)  ![Screenshot 2024-11-06 200221](https://github.com/user-attachments/assets/7bd7db70-85f3-4b64-ad10-92995d3e2c8a) ![Screenshot 2024-11-06 200231](https://github.com/user-attachments/assets/bd302299-2686-422b-a865-ca61c116186c)
+
+
+![Screenshot 2024-11-06 200240](https://github.com/user-attachments/assets/f690acd9-8011-4ce5-9c4a-3c507ed9798a)
+
+
+
 ## Problem Statement
 
 Objective: Develop a machine learning model to classify semiconductor wafers as "Good" or "Bad" based on sensor data collected during the fabrication process.
