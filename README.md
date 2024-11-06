@@ -26,7 +26,7 @@ Output (Target): "Good" (1) or "Bad" (-1), indicating the quality of the wafer.
 
 Goal: To create a classification model that accurately predicts wafer quality based on sensor readings.
 
-##Project Goal
+## Project Goal
 
 The main goal of this project is to develop a machine learning classification model that can help in:
 
