@@ -21,9 +21,12 @@ Objective: Develop a machine learning model to classify semiconductor wafers as 
 ## Data Details
 
 Inputs (Features): 590 sensor readings (e.g., Sensor-1, Sensor-2, ... Sensor-590) per wafer. These readings capture environmental and process parameters.
+
 Output (Target): "Good" (1) or "Bad" (-1), indicating the quality of the wafer.
+
 Goal: To create a classification model that accurately predicts wafer quality based on sensor readings.
-Project Goal
+
+##Project Goal
 
 The main goal of this project is to develop a machine learning classification model that can help in:
 
@@ -48,29 +51,41 @@ Matplotlib & Seaborn: For data visualization.
 ## Installation and Setup
 
 ## Clone the repository:
+
 git clone https://github.com/Vaidik26/SensorProject01
+
 cd Sensor-Fault-Detection
 
 ## Install the required packages:
-bash
+
 pip install -r requirements.txt
 
 ## Run the project:
-python main.py
+
+python app.py
 
 ## Usage
+
 Load Dataset: Ensure your sensor data is formatted correctly (590 features + target).
+
 Train Model: Train the classification model with your data.
+
 Predict: Use the trained model to classify new wafer data as "Good" or "Bad."
 
 ## Project Structure
+
 data/: Directory for datasets.
+
 src/: Main source code for data processing, model training, and evaluation.
+
 models/: Saved models.
+
 notebooks/: Jupyter notebooks for exploratory data analysis and prototyping.
+
 README.md: Project documentation.
 
 ## License
+
 This project is licensed under the MIT License.
 
 ## Contact
