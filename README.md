@@ -40,7 +40,7 @@ Matplotlib & Seaborn: For data visualization.
 ## Installation and Setup
 
 ## Clone the repository:
-git clone https://github.com/yourusername/Sensor-Fault-Detection.git
+git clone https://github.com/Vaidik26/SensorProject01
 cd Sensor-Fault-Detection
 
 ## Install the required packages:
