@@ -1,5 +1,6 @@
 ## Sensor Fault Detection Project
 
+
 ## Project Description
 
 In electronics manufacturing, a wafer is a thin slice of semiconductor material, like crystalline silicon, used to fabricate integrated circuits and solar cells. Wafers act as substrates or foundations upon which microelectronic devices are built. During wafer fabrication, hundreds or even thousands of identical circuits are created for use in devices like computers, smartphones, and more.
