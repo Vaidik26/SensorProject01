@@ -1,48 +1,117 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wafer fault detection</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="../static/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wafer Fault Detection</title>
+  <style>
+    /* General styling for layout and text */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #333;
+    }
 
+    /* Title styling */
+    .title {
+        font-size: 2em;
+        color: #1a1a1a;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
 
+    /* Frame and form layout */
+    .frame {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        border: 2px solid #e0e0e0;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Dropzone styling */
+    .dropzone {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+        margin: 20px 0;
+        border: 2px dashed #1d72b8;
+        border-radius: 8px;
+        background-color: #eaf4fb;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .upload-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .upload-input {
+        opacity: 0;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    /* Button styling */
+    .btn {
+        font-size: 1.25em;
+        color: #ffffff;
+        background-color: #1d72b8;
+        padding: 12px 30px;
+        border-radius: 8px;
+        border: none;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn:hover {
+        background-color: #155a8a;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+  </style>
 </head>
 <body>
    
-<!-- partial:index.partial.html -->
-<form action = "/predict" method = "post" enctype="multipart/form-data" >
-    <h1 class="title">Upload CSV for the prediction</h1>
-<div class="frame">
-    <div class="center">
-        <div class="title">
-            <h1>Drop file to upload</h1>
-        </div>
-       
-
-
-            <div class="dropzone">
-                <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
-                <input type="file" class="upload-input" name = "file" accept=".csv" >
+<form action="/predict" method="post" enctype="multipart/form-data">
+    <h1 class="title">Upload CSV for the Prediction</h1>
+    <div class="frame">
+        <div class="center">
+            <div class="title">
+                <h1>Drop file to upload</h1>
             </div>
 
+            <div class="dropzone">
+                <img src="http://100dayscss.com/codepen/upload.svg" alt="Upload Icon" class="upload-icon" />
+                <input type="file" class="upload-input" name="file" accept=".csv">
+            </div>
 
-        <button type="submit" class="btn" name="uploadbutton">Upload file</button>
-       
+            <button type="submit" class="btn" name="uploadbutton">Upload File</button>
+        </div>
     </div>
-
-
-</div>
-
-
 </form>
-<!-- original pen: https://codepen.io/roydigerhund/pen/ZQdbeN  -->
-
-
-<!-- NO JS ADDED YET -->
-<!-- partial -->
-  <script src='https://100dayscss.com/codepen/js/jquery.min.js'></script><script  src="./script.js"></script>
-
 
 </body>
 </html>
