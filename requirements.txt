@@ -1,12 +1,12 @@
-aiofiles
+aiofiles==23.1.0
 dill==0.3.5.1
 dnspython==2.2.1
-database-connect==0.1.66
-evidently==0.1.58.dev0
+database-connect==0.1.66  # Assuming it's a valid PyPI package (custom?)
+evidently==0.1.58.dev0     # If it breaks, try stable: ==0.1.55
 Flask==2.2.3
 httptools==0.5.0
-imblearn==0.0
-ipykernel
+imbalanced-learn==0.10.1   # imblearn==0.0 is just a wrapper; use real package
+ipykernel==6.25.2
 jinja2==3.1.2
 mypy-boto3-s3==1.24.76
 pip-chill==1.0.1
@@ -18,10 +18,10 @@ types-s3transfer==0.6.0.post4
 uvicorn==0.18.3
 watchfiles==0.17.0
 websockets==10.3
-wincertstore==0.2
+wincertstore==0.2           # Only relevant for Windows; optional
 xgboost==1.6.2
-neuro-mf==0.0.5
+neuro-mf==0.0.5             # Make sure this is not private/unpublished
 boto3==1.26.105
 Werkzeug==2.2.2
 
-#-e.
+#e.
